@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required Social Preview MetaTags -->
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="TO-DO | TO-DO List Web App">
+    <meta name="description"
+        content="TO-DO is a very simple To Do List web app built using Pure JavaScript. TO-DO is built to list your works easily, which you need to be done. It will make your life super easy! Made With ♥ by Mirza Saikat Ahmmed">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mirzasaikatahmmed.github.io/TO-DO">
+    <meta property="og:title" content="TO-DO | TO-DO List Web App">
+    <meta property="og:description"
+        content="TO-DO is a very simple To Do List web app built using Pure JavaScript. TO-DO is built to list your works easily, which you need to be done. It will make your life super easy! Made With ♥ by Mirza Saikat Ahmmed">
+    <meta property="og:image" content="preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mirzasaikatahmmed.github.io/TO-DO">
+    <meta property="twitter:title" content="TO-DO | TO-DO List Web App">
+    <meta property="twitter:description"
+        content="TO-DO is a very simple To Do List web app built using Pure JavaScript. TO-DO is built to list your works easily, which you need to be done. It will make your life super easy! Made With ♥ by Mirza Saikat Ahmmed">
+    <meta property="twitter:image" content="preview.jpg">
+
+    <!-- End of Required Social Preview MetaTags -->
+
+    <!-- MADE WITH LOVE BY AL NAHIAN | Portfolio: https://mirzasaikatahmmed.com/ | Behance: https://behance.net/mirzasaikatahmmed | Github: https://github.com/mirzasaikatahmmed -->
+
+    <!-- Montserrat Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- LINE AWESOME CDN -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>TO-DO | TO-DO List Web App</title>
+</head>
+
+<body onload="tasker.construct();">
+    <!-- Main Section Which Will Contain Everything -->
+    <h1>TO-DO</h1>
+
+    <!-- AlertBox -->
+    <div class="alert">
+        <p>⚠ Please add a task first!</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="form-container">
+            <div class="add-form">
+                <input id="input" type="text" placeholder="Type your To-Do works...">
+                <button type="submit" id="submit">ADD</button>
+            </div>
+        </div>
+        <div class="head">
+            <div class="date">
+                <p>00:00:00</p>
+            </div>
+            <div class="add">
+                <svg width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+            </div>
+            <div class="time">
+                <p>00:00:00</p>
+            </div>
+        </div>
+        <div class="pad">
+            <div class="placeholder">
+                <h4>Click on the + icon to add a new task.</h4>
+            </div>
+            <div id="todo">
+                <ul id="tasksContainer">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p>Made With Pure love , HardWork, Lots of Failure, Depression, Sadness, Bugs and Errors by <a
+                href="https://mirzasaikatahmmed.com/" target="_blank">Mirza Saikat Ahmmed</a>.
+            <br>
+            Give a Star On <a href="https://github.com/mirzasaikatahmmed/TO-DO" target="_blank">This Project</a> and follow
+            me on <a href="https://github.com/mirzasaikatahmmed" target="_blank">GitHub</a>.
+        </p>
+        <br>
+        <p>Copyright Mirza Saikat Ahmmed | 2021</p>
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>
